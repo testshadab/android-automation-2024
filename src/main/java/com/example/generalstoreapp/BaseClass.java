@@ -35,23 +35,6 @@ public class BaseClass {
 	public static ExtentTest logger;
 	public DeviceRotation landScape;
 
-	/*
-	 * @BeforeSuite public void Configuration(ITestContext testContext) throws
-	 * MalformedURLException, InterruptedException {
-	 * 
-	 * System.out.println("It'll run first Before suite");
-	 * 
-	 * htmlReporter = new ExtentHtmlReporter( System.getProperty("user.dir") +
-	 * File.separator + "reports" + File.separator + "Test_Report.html");
-	 * htmlReporter.config().setEncoding("utf-8");
-	 * htmlReporter.config().setDocumentTitle("Automation Report");
-	 * htmlReporter.config().setReportName("");
-	 * htmlReporter.config().setTheme(Theme.DARK); extent = new ExtentReports();
-	 * extent.attachReporter(htmlReporter); logger =
-	 * extent.createTest(testContext.getName());
-	 * setupDriver(DeviceDetails.MobileBrowserName); }
-	 */
-
 	@BeforeSuite
 	public void Configuration(ITestContext testContext) throws MalformedURLException, InterruptedException {
 		System.out.println("It'll run first Before suite");
